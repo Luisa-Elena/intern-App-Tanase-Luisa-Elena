@@ -1,0 +1,85 @@
+.homeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //min-height: 90vh;
+  //width: 100%;
+}
+
+.cardForm {
+    width: 200px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+
+.cardButtonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .existingCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .cardInput {
+    border-radius: 5px;
+  }
+
+  .cardInput:focus {
+    outline: none;
+    border-color:#a393eb;
+  }
+  
+  .cardButton {
+    margin: 1px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #a393eb;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .cardButton:hover {
+    background-color: #5e63b6;
+  }
+  
+  .cardButton:focus {
+    outline: none;
+  }
+  
+  .cardTitle {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 10px; 
+  }
+
+  .cardDescription {
+    overflow-y: auto;
+    max-width: 100%;
+    word-wrap: break-word;
+  }

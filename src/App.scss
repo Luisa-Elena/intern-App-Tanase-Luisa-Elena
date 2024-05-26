@@ -1,13 +1,12 @@
 @import "./styles/index.scss";
 
 .header {
-  background-color: #a4c991;
+  background-color: #211F1E;
   padding: 10px 20px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 
 .layout-container {
@@ -16,6 +15,51 @@
 
 .logo {
   @include for-phone-only {
-    width: 50px;
+    width: 50%;
+  }
+  justify-self: center;
+}
+
+.nav-list-item {
+  list-style: none;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list {
+  @include for-phone-only {
+    flex-direction: column;
+  }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  @include for-phone-only {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav {
+  @include for-phone-only {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #211F1E;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &.open {
+    display: flex;
   }
 }
